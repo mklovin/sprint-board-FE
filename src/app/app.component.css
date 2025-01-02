@@ -1,0 +1,32 @@
+header {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  main {
+    padding: 20px;
+    min-height: calc(100vh - 80px);
+  }
+  

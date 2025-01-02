@@ -1,0 +1,59 @@
+/* Main container for the sidebar */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.3s; /* Smooth transition for open/close */
+    z-index: 1000;
+  }
+  
+  .sidebar-container.open {
+    width: 250px; /* Width of the expanded sidebar */
+  }
+  
+  .sidebar {
+    height: 100%;
+    background-color: #333; /* Dark background for the sidebar */
+    color: #fff; /* Text color */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add some shadow for depth */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ff5722; /* Highlight link on hover */
+  }
+  
+  /* Overlay to close the sidebar on clicking outside */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Below the sidebar */
+  }
+  

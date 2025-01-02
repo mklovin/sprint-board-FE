@@ -1,0 +1,19 @@
+<div class="sidebar-container" [class.open]="isHovered" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <div class="sidebar">
+      <ul>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/auth/signin">Sign In</a></li>
+        <li><a routerLink="/auth/signup">Sign Up</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div
+  class="overlay"
+  *ngIf="isHovered"
+  tabindex="0"
+  (click)="closeSidebar()"
+  (keydown)="handleKeyDown($event)">
+</div>
+  
